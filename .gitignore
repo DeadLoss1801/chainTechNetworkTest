@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask related
+instance/
+*.sqlite3
+*.db
+*.log
+
+# Pytest cache
+.cache/
+
+# Environment variables file
+.env
+*.env
+
+# Mac OS files
+.DS_Store
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Files created by Flask on production
+*.pid
+
+# Ignore migrations in case using a database migration tool
+migrations/
+
+# Ignore Jupyter Notebooks if using any
+*.ipynb_checkpoints

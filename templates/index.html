@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page with Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Website Title</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/submissions">Submissions</a>
+    </nav>
+</header>
+
+<main>
+    <p>Welcome to our website. Here you can find information about our services and more.</p>
+
+    <!-- Display the current time dynamically -->
+    <p>Current Date and Time: {{ current_time }}</p>
+
+    <!-- Display a random quote dynamically -->
+    <p>Quote of the Day: "{{ random_quote }}"</p>
+
+    <!-- User data form -->
+    <h2>Submit Your Details</h2>
+    <form method="POST" action="/submit">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p>Contact us at: contact@example.com | Phone: +1234567890</p>
+</footer>
+
+</body>
+</html>
